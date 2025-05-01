@@ -1,0 +1,15 @@
+! Disable the "Sign in with Google" prompt on websites:
+! accounts.google.com/gsi/*
+accounts.google.com/gsi/iframe
+
+! Remove YouTube shorts, banners and annoyances:
+! Shorts in homepage.
+youtube.com##ytd-rich-section-renderer:has(#rich-shelf-header:has-text(Shorts))
+youtube.com##ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(Shorts))
+! Increase number of videos per row.
+youtube.com##.style-scope.ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4;)
+! Remove "Featured" section in homepage.
+www.youtube.com###foreground-content
+
+! Remove GitHub Copilot (Can be disabled in account settings):
+! github.com##.AppHeader-CopilotChat
